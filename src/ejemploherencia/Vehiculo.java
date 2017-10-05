@@ -10,5 +10,20 @@ package ejemploherencia;
  * @author Estudiante
  */
 public class Vehiculo {
-    
+
+    protected int caballosDeFuerza;
+
+    public Vehiculo(int x) {
+        System.out.println("Constructor del padre");
+        this.caballosDeFuerza = x;
+    }
+
+    public void arrancar() {
+        System.out.println("Arrancar padre");
+    }
+
+    public void Detener() {
+        System.out.println("Detener padre");
+    }
+
 }

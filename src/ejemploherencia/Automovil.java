@@ -9,6 +9,20 @@ package ejemploherencia;
  *
  * @author Estudiante
  */
-public class Automovil {
-    
+public class Automovil extends Vehiculo {
+
+    private int CantidadDePuertas;
+
+    public Automovil(int cantidadDePuertas, int x) {
+        super(x);
+        this.CantidadDePuertas = cantidadDePuertas;
+        this.caballosDeFuerza = 10;
+        System.out.println("Constructor del hijo");
+    }
+
+    public void acelerar(int cuanto) {
+        System.out.println("Acelerando: " + cuanto + "km/h");
+
+    }
+
 }

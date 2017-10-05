@@ -15,7 +15,9 @@ public class EjemploHerencia {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Automovil auto = new Automovil(4, 1);
+        auto.arrancar();
+        auto.Detener();
     }
-    
+
 }

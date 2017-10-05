@@ -24,5 +24,11 @@ public class Automovil extends Vehiculo {
         System.out.println("Acelerando: " + cuanto + "km/h");
 
     }
+    
+    @Override
+    public void arrancar(){
+        System.out.println("Sobreescribir metodo");
+        super.arrancar();
+    }
 
 }
